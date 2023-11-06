@@ -2,6 +2,16 @@
 
 This is the repository where I store the layout for chips that I have designed.
 
+# One Sprite Pony TT05
+
+![One Sprite Pony TT05](one-sprite-pony_tt05/one-sprite-pony_tt05_wb_lyp.png)
+
+This Verilog design produces SVGA 800x600 60Hz output with a background and one sprite. Internally, the resolution is reduced to 100x75, thus one pixel of the sprite is actually 8x8 pixels. The design can operate at either a 40 MHz pixel clock or a 10 MHz pixel clock by setting a configuration bit.
+
+The design was submitted to Tiny Tapeout 05 for production.
+
+[Project Link](https://github.com/mole99/tt05-one-sprite-pony)
+
 # LeoSoC MPW-8
 
 ![LeoSoC MPW-8](leosoc_mpw8/leosoc_mpw8_wb.png)
