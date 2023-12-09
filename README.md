@@ -2,6 +2,26 @@
 
 This is the repository where I store the layout for chips that I have designed.
 
+# LeoSoC GFMPW-1
+
+![leosoc-gfmpw1_wb_lyp.png](leosoc-gfmpw1/leosoc-gfmpw1_wb_lyp.png)
+
+A simple dual-core SoC with true random number generators as payload.
+
+- Two RV32I cores running in parallel
+- 32 word direct-mapped instruction cache for each core
+- 4kB of shared memory
+- SPI flash controller
+- 2 UARTs
+- 1 GPIO controller (24 I/Os)
+- 15 different TRNGs
+
+It uses the foundry provided 512x8 SRAM macros. In total there are 15 different TRNG configurations on board.
+
+The design was submitted to the GFMPW-1 Shuttle Program.
+
+[Project Link](https://github.com/mole99/leosoc-gfmpw-1)
+
 # One Sprite Pony TT05
 
 ![One Sprite Pony TT05](one-sprite-pony_tt05/one-sprite-pony_tt05_wb_lyp.png)
