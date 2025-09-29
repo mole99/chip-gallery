@@ -7,7 +7,7 @@ This is the repository where I store the layout for chips or designs that I desi
 
 A RISC-V SoC with tightly coupled eFPGA on IHP SG13G2
 
-![Greyhound rev2 without fill](greyhound-ihp-rev2/FMD_QNC_greyhound_ihp_small.png)
+![Greyhound rev2 with fill](greyhound-ihp-rev2/FMD_QNC_greyhound_ihp_small.png)
 
 [Greyhound](https://github.com/mole99/greyhound-ihp) has been submitted to the [IHP-Open-DesignLib](https://ihp-open-ip.readthedocs.io/en/latest/) in September 2025 for fabrication.
 
