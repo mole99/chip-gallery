@@ -2,19 +2,51 @@
 
 This is the repository where I store the layout for chips or designs that I designed.
 
+
+# Greyhound IHP Revision 2 2025
+
+A RISC-V SoC with tightly coupled eFPGA on IHP SG13G2
+
+![Greyhound rev2 without fill](greyhound-ihp-rev2/FMD_QNC_greyhound_ihp_small.png)
+
+[Greyhound](https://github.com/mole99/greyhound-ihp) has been submitted to the [IHP-Open-DesignLib](https://ihp-open-ip.readthedocs.io/en/latest/) in September 2025 for fabrication.
+
+- Designed using the [IHP Open Source PDK](https://github.com/IHP-GmbH/IHP-Open-PDK)
+- SoC:
+  - [CV32E40X](https://github.com/openhwgroup/cv32e40x) RISC-V core from the OpenHW group
+  - 8 KiB SRAM
+  - QSPI Flash Controller for XIP (w. cache, 16 lines)
+  - QSPI PSRAM controller
+  - Highly Configurable UART
+  - Fabric Config Peripheral
+  - Fabric Peripheral
+- FABulous eFPGA
+  - 32x I/Os
+  - 1024x LUT4 + FF (w. carry chain)
+  - 128x MUX (Either 1xMUX8, 2xMUX4 or 4xMUX2)
+  - 4x SRAM (32 bit wide, 4 KiB)
+  - 4x BRAM (16 bit wide, 2 KiB)
+  - 8x MAC (8bit*8bit + 20bit)
+  - 16x Register file (32x4bit each, 1w1r1r)
+  - 1x Global clock network
+  - 1x WARMBOOT
+  - 1x CPU_IRQ
+  - 1x OBI_PERIPHERAL (Open Bus Interface)
+  - 1x CUSTOM_INSTRUCTION
+
 # Greyhound IHP 2025
 
 A RISC-V SoC with tightly coupled eFPGA on IHP SG13G2
 
 ![Greyhound without fill](greyhound-ihp/greyhound_ihp_top_small.png)
 
-[Greyhound](https://github.com/mole99/greyhound-ihp) has been submitted to the [IHP-Open-DesignLib](https://ihp-open-ip.readthedocs.io/en/latest/) for fabrication.
+[Greyhound](https://github.com/mole99/greyhound-ihp) has been submitted to the [IHP-Open-DesignLib](https://ihp-open-ip.readthedocs.io/en/latest/) in April 2025 for fabrication.
 
 - Designed using the [IHP Open Source PDK](https://github.com/IHP-GmbH/IHP-Open-PDK)
 - SoC:
   - [CV32E40X](https://github.com/openhwgroup/cv32e40x) RISC-V core from the OpenHW group
   - 8kB SRAM
-  - QSPI Flash Controller for XIP (w. cache)
+  - QSPI Flash Controller for XIP (w. cache, 8 lines)
   - QSPI PSRAM controller
   - Highly Configurable UART
   - Fabric Config Peripheral
