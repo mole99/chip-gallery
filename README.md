@@ -3,6 +3,64 @@
 This is the repository where I store the layout for chips or designs that I designed.
 
 
+# HeiChips 2025
+
+It's an open-source chip featuring user projects created by participants of the HeiChips Summer School 2025 (https://heichips.github.io/).
+The chip uses 9mm² of silicon on SG13CMOS and has been submitted to IHP's Low-Cost MPW shuttle
+
+![HeiChips 2025](heichips25/heichips25_top_render_white.png)
+
+- [FABulous](https://github.com/FPGA-Research/FABulous) eFPGA
+  - 32x I/Os
+  - 288x LUT4 + FF
+    - w. carry chain
+  - 1x SRAM
+    - 4 KiB memory: 32 bit wide, 10 bit deep (1024 entries)
+    - individual bit-enable
+  - 4x global buffers
+  - 1x system reset
+
+HeiChips 2025 repository: https://github.com/FPGA-Research/heichips25-tapeout
+
+# Tiny FABulous FPGA IHP26a
+
+![Tiny FABulous FPGA IHP26a](tt-fabulous-ihp-26a/tt_um_fabulous_ihp_26a_white.png)
+
+This design implements a tiny FPGA with 168 LUT4+FF. The FPGA fabric is 9x5 tiles in size, of which 7x3 are LUT4x8_ha tiles. The logic cells include a vertical carry-chain in upwards direction, allowing for fast additions up to 23-bits.
+
+The I/Os resemble the Tiny Tapeout interface, allowing for clk, rst_n, uo, ui and uio signals. This enables to directly implement simple Tiny Tapeout designs on the FPGA.
+
+The user design is synthesized using Yosys and implemented using nextpnr (currently forks are required to be used, but the changes will be upstreamed).
+
+The bitstream is uploaded to the fabric using a bitbang interface (see how to test). The bitbang interface is active while reset is applied, this ensures that all I/Os are available for the active user design.
+
+Repository: https://github.com/mole99/tt-fabulous-ihp-26a
+
+# GF180MCU FABulous FPGA
+
+![GF180MCU FABulous FPGA](gf180mcu-fabulous-fpga/chip_top_gf180mcu_custom_white.png)
+
+- [FABulous](https://github.com/FPGA-Research/FABulous) eFPGA
+  - 48x I/Os
+  - 480x LUT4 + FF
+    - w. carry chain
+  - 60x MUX
+    - Either 1xMUX8, 2xMUX4 or 4xMUX2
+  - 6x SRAM 512x8
+    - individual bit-enable
+  - 6x MAC
+    - 8bit*8bit + 20bit
+    - sign-extend
+    - sync/async operands and/or ACC
+  - 12x Register file
+    - 32x4bit each
+    - 1w1r1r
+    - sync/async output
+  - 1x Global clock network
+  - 1x WARMBOOT
+    - Trigger a reconfiguration from one of 16 slots
+    - Provides a reset signal which is asserted during reconfiguration
+
 # Greyhound IHP Revision 2 2025
 
 A RISC-V SoC with tightly coupled eFPGA on IHP SG13G2
