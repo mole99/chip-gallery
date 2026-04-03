@@ -65,7 +65,7 @@ Repository: https://github.com/mole99/tt-fabulous-ihp-26a
 
 A RISC-V SoC with tightly coupled eFPGA on IHP SG13G2
 
-![Greyhound rev2 with fill](greyhound-ihp-rev2/FMD_QNC_greyhound_ihp_small.png)
+![Greyhound rev2 with fill](greyhound-ihp-rev2/FMD_QNC_greyhound_ihp_sg13g2_render_white.png)
 
 [Greyhound](https://github.com/mole99/greyhound-ihp) has been submitted to the [IHP-Open-DesignLib](https://ihp-open-ip.readthedocs.io/en/latest/) in September 2025 for fabrication.
 
@@ -96,7 +96,7 @@ A RISC-V SoC with tightly coupled eFPGA on IHP SG13G2
 
 A RISC-V SoC with tightly coupled eFPGA on IHP SG13G2
 
-![Greyhound without fill](greyhound-ihp/greyhound_ihp_top_small.png)
+![Greyhound without fill](greyhound-ihp/greyhound_ihp_top.gds_sg13g2_render_white.png)
 
 [Greyhound](https://github.com/mole99/greyhound-ihp) has been submitted to the [IHP-Open-DesignLib](https://ihp-open-ip.readthedocs.io/en/latest/) in April 2025 for fabrication.
 
