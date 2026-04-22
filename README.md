@@ -38,7 +38,11 @@ Repository: https://github.com/mole99/tt-fabulous-ihp-26a
 
 # GF180MCU FABulous FPGA
 
+A FABulous FPGA based on the project template for wafer.space MPW runs using the gf180mcu PDK.
+
 ![GF180MCU FABulous FPGA](gf180mcu-fabulous-fpga/chip_top_gf180mcu_custom_white.png)
+
+[GF180MCU FABulous FPGA](https://github.com/mole99/gf180mcu-fabulous-fpga) has been submitted to the first [wafer.space](https://wafer.space/) shuttle late 2025 for fabrication.
 
 - [FABulous](https://github.com/FPGA-Research/FABulous) eFPGA
   - 48x I/Os
@@ -60,6 +64,25 @@ Repository: https://github.com/mole99/tt-fabulous-ihp-26a
   - 1x WARMBOOT
     - Trigger a reconfiguration from one of 16 slots
     - Provides a reset signal which is asserted during reconfiguration
+
+# Panamax FPGA
+
+A FABulous FPGA utilizing the Panamax padframe on SKY130.
+
+![Panamax FPGA](panamax-fpga/panamax_fpga_sky130A_render_white.png)
+
+[Panamax FPGA](https://github.com/mole99/panamax-fpga) has been submitted to the Cadence SkyWater run in 2025 for fabrication.
+
+- 64 I/Os
+    * Pull-up / Pull-down
+    * Open-drain
+    * Slow / fast slew
+- 1280 LCs (LUT4 + FF)
+- 8 MAC (8-bit * 8-bit + 20-bit)
+- 16 Register files (1w2r, 32x4)
+- 8 BRAM (dual-ported 1r1rw, 256x32)
+- 2 x 12-bit split-CDAC SAR ADC
+- 2 x 8-bit R-DAC
 
 # Greyhound IHP Revision 2 2025
 
