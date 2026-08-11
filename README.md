@@ -20,14 +20,16 @@ This is an improved version of my FABulous FPGA on wafer.space run 1. Notably, i
 | SYS_RESET | 1 | Can be used to reset the design after configuration. |
 | WARMBOOT | 1 | Can be used to reset the design after configuration. |
 
-Repository: https://github.com/mole99/wsrun2-fabulous-fpga
+- Repository: https://github.com/mole99/wsrun2-fabulous-fpga
 
 # Tiny FABulous FPGA GF0p3 (3.3V)
 
 Tiny FABulous FPGA for GF0p3.
 
-| ![Tiny FABulous FPGA GF0p3](tt-fabulous-gf-0p3/tt_um_fabulous_gf_0p3_gf180mcu_custom_white.png) | ![Tiny FABulous FPGA GF0p3 (3.3V)](tt-fabulous-gf-0p3-3v3/tt_um_fabulous_gf_0p3_3v3_gf180mcu_custom_white.png)  |
+| Tiny FABulous FPGA GF0p3 | Tiny FABulous FPGA GF0p3 (3.3V) |
 |---|---|
+| ![Tiny FABulous FPGA GF0p3](tt-fabulous-gf-0p3/tt_um_fabulous_gf_0p3_gf180mcu_custom_white.png) | ![Tiny FABulous FPGA GF0p3 (3.3V)](tt-fabulous-gf-0p3-3v3/tt_um_fabulous_gf_0p3_3v3_gf180mcu_custom_white.png)  |
+
 
 | Primitive | Available | Description |
 |---|---|---|
@@ -36,15 +38,16 @@ Tiny FABulous FPGA for GF0p3.
 | GBUF | 4  | Global buffers to supply clock, reset and enable to the flip-flops. |
 | SYS_RESET | 1 | Can be used to reset the design after configuration. |
 
-Repository: https://github.com/mole99/tt-fabulous-gf-0p3
-Repository (3.3V): https://github.com/mole99/tt-fabulous-gf-0p3-3v3
+- Repository: https://github.com/mole99/tt-fabulous-gf-0p3
+- Repository (3.3V): https://github.com/mole99/tt-fabulous-gf-0p3-3v3
 
 # Tiny FABulous FPGA SKY26a/SKY26b
 
 Tiny FABulous FPGA for SKY26a/SKY26b.
 
-| ![Tiny FABulous FPGA SKY26a](tt-fabulous-sky-26a/tt_um_fabulous_sky_26a_sky130A_render_white.png)  | ![Tiny FABulous FPGA SKY26b](tt-fabulous-sky-26b/tt_um_fabulous_sky_26b_sky130A_render_white.png)  |
+| Tiny FABulous FPGA SKY26a | Tiny FABulous FPGA SKY26b |
 |---|---|
+| ![Tiny FABulous FPGA SKY26a](tt-fabulous-sky-26a/tt_um_fabulous_sky_26a_sky130A_render_white.png)  | ![Tiny FABulous FPGA SKY26b](tt-fabulous-sky-26b/tt_um_fabulous_sky_26b_sky130A_render_white.png)  |
 
 | Primitive | Available | Description |
 |---|---|---|
@@ -53,8 +56,8 @@ Tiny FABulous FPGA for SKY26a/SKY26b.
 | GBUF | 4  | Global buffers to supply clock, reset and enable to the flip-flops. |
 | SYS_RESET | 1 | Can be used to reset the design after configuration. |
 
-Repository SKY26a: https://github.com/mole99/tt-fabulous-sky-26a
-Repository SKY26b: https://github.com/mole99/tt-fabulous-sky-26b
+- Repository SKY26a: https://github.com/mole99/tt-fabulous-sky-26a
+- Repository SKY26b: https://github.com/mole99/tt-fabulous-sky-26b
 
 # HeiChips 2025
 
