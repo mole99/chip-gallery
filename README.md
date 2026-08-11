@@ -2,6 +2,59 @@
 
 This is the repository where I store the layout for chips or designs that I designed.
 
+# GF180MCU FABulous FPGA (3.3V)
+
+This is an improved version of my FABulous FPGA on wafer.space run 1. Notably, it uses 3.3V standard cells and SRAM macros, as well as 3.3V/5V compatible I/O cells. 
+
+![GF180MCU FABulous FPGA (3.3V)](wsrun2-fabulous-fpga/chip_top_gf180mcu_custom_white.png)
+
+| Primitive | Available | Description |
+|---|---|---|
+| FABULOUS_LC | 624  | Logic cells with LUT4+FF and carry-chain. |
+| GF_IOBUF | 48  | Input/output buffer. Configurable input type (cmos/schmitt), slew rate (fast/slow), pull-up, pull-down. |
+| IDDR | 48  | Input double data rate buffer. |
+| ODDR | 48  | Output double data rate buffer. |
+| GBUF | 4  | Global buffer to supply clock, reset and enable to the flip-flops. |
+| RAM_32x4_2R_1W | 13 | RAM that is 4 bit wide and 32 words deep. It has two read ports and one write port. |
+| GF_SRAM_1024x8_1RW | 13 | SRAM with 1024x8 bits of data and one synchronous read/write port. |
+| SYS_RESET | 1 | Can be used to reset the design after configuration. |
+| WARMBOOT | 1 | Can be used to reset the design after configuration. |
+
+Repository: https://github.com/mole99/wsrun2-fabulous-fpga
+
+# Tiny FABulous FPGA GF0p3 (3.3V)
+
+Tiny FABulous FPGA for GF0p3.
+
+| ![Tiny FABulous FPGA GF0p3](tt-fabulous-gf-0p3/tt_um_fabulous_gf_0p3_gf180mcu_custom_white.png) | ![Tiny FABulous FPGA GF0p3 (3.3V)](tt-fabulous-gf-0p3-3v3/tt_um_fabulous_gf_0p3_3v3_gf180mcu_custom_white.png)  |
+|---|---|
+
+| Primitive | Available | Description |
+|---|---|---|
+| FABULOUS_LC | 64  | Logic cells with LUT4+FF and carry-chain. |
+| IOBUF | 26  | Input/output buffers. |
+| GBUF | 4  | Global buffers to supply clock, reset and enable to the flip-flops. |
+| SYS_RESET | 1 | Can be used to reset the design after configuration. |
+
+Repository: https://github.com/mole99/tt-fabulous-gf-0p3
+Repository (3.3V): https://github.com/mole99/tt-fabulous-gf-0p3-3v3
+
+# Tiny FABulous FPGA SKY26a/SKY26b
+
+Tiny FABulous FPGA for SKY26a/SKY26b.
+
+| ![Tiny FABulous FPGA SKY26a](tt-fabulous-sky-26a/tt_um_fabulous_sky_26a_sky130A_render_white.png)  | ![Tiny FABulous FPGA SKY26b](tt-fabulous-sky-26b/tt_um_fabulous_sky_26b_sky130A_render_white.png)  |
+|---|---|
+
+| Primitive | Available | Description |
+|---|---|---|
+| FABULOUS_LC | 128  | Logic cells with LUT4+FF and carry-chain. |
+| IOBUF | 26  | Input/output buffers. |
+| GBUF | 4  | Global buffers to supply clock, reset and enable to the flip-flops. |
+| SYS_RESET | 1 | Can be used to reset the design after configuration. |
+
+Repository SKY26a: https://github.com/mole99/tt-fabulous-sky-26a
+Repository SKY26b: https://github.com/mole99/tt-fabulous-sky-26b
 
 # HeiChips 2025
 
@@ -144,6 +197,8 @@ A RISC-V SoC with tightly coupled eFPGA on IHP SG13G2
   - 1x CPU_IRQ
   - 4x CPU_IF
 
+Microscopy image: http://infosecdj.net/map/ihp/mole99-greyhound/infosecdj_mz_nikpa40x/#x=23424&y=32416&z=1
+© 2026 InfoSecDJ, CC BY-NC 4.0
 
 # Second Minimal Fab Design Contest 2025
 
@@ -252,6 +307,9 @@ The design was submitted to the GFMPW-1 Shuttle Program.
 
 [Project Link](https://github.com/mole99/leosoc-gfmpw-1)
 
+Microscopy image: http://infosecdj.net/map/efabless/gf180mcu-gfmpw1-leosoc-18019f00/infosecdj_mz_nikpa40x_66p/#x=16832&y=23328&z=1
+© 2026 InfoSecDJ, CC BY-NC 4.0
+
 # One Sprite Pony TT05
 
 SVGA sprite generator
@@ -282,6 +340,9 @@ This is a simple SoC with the following:
 	- 9600 baud fixed at 40 MHz
 - Blink
 	- Simple output to blink an LED
+
+Microscopy image: http://infosecdj.net/map/efabless/sky130-mpw8c-leosoc-0008927d/infosecdj_mz_nikpa40x/
+© 2026 InfoSecDJ, CC BY-NC 4.0
 
 # Waveform Generator MPW-7
 
