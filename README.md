@@ -41,6 +41,31 @@ Tiny FABulous FPGA for GF0p3.
 - Repository: https://github.com/mole99/tt-fabulous-gf-0p3
 - Repository (3.3V): https://github.com/mole99/tt-fabulous-gf-0p3-3v3
 
+# sky130 FABulous Test Chip
+
+A test chip with three FABulous FPGA fabrics.
+
+![sky130 FABulous Test Chip](sky130-fabulous-testchip/chip_top_sky130A_render_white.png)
+
+The following FPGA fabrics are available:
+
+- classic_fabric_chipfoundry_small
+  - 192x FABULOUS_LC
+- classic_fabric_chipfoundry_medium
+  - 288x FABULOUS_LC
+  - 6x RAM_32x4_2R_1W
+  - 3x MACC_8x8_20
+- classic_fabric_chipfoundry_large
+  - 1056x FABULOUS_LC
+  - 12x RAM_32x4_2R_1W
+  - 6x MACC_8x8_20
+
+The chip will be packaged using ChipFoundry's QFN service.
+
+Taped out on CI2605, May 2026 MPW Shuttle.
+
+Repository: https://github.com/mole99/sky130-fabulous-testchip
+
 # Tiny FABulous FPGA SKY26a/SKY26b
 
 Tiny FABulous FPGA for SKY26a/SKY26b.
